@@ -40,7 +40,7 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 
 
 # Schema elettrico
-![[schema elettrico.png]]
+![schema elettrico] (../main/schema-elettrico.png)
 # Codice
 ## Spiegazione
 Il µC deve:

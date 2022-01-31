@@ -3,7 +3,7 @@ title: "CONTROLLO TEMPERATURA DI UN PICCOLO AMBIENTE"
 permalink: /
 layout: default
 ---
-[//]: # (Go to [about page](about.md))
+<!--- (Go to [about page](about.md) -->
 # CONTROLLO TEMPERATURA DI UN PICCOLO AMBIENTE
 # Spiegazione
 		   

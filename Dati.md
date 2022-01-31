@@ -1,7 +1,8 @@
 ---
-title: "CONTROLLO TEMPERATURA DI UN PICCOLO AMBIENTE"
+title: "Dati"
 permalink: /
 layout: default
+filename: Dati.md
 ---
 
 # Sensore LM35

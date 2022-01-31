@@ -1,5 +1,5 @@
 ---
-title: "Dati"
+title: "DATI"
 layout: default
 filename: Dati.md
 ---

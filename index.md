@@ -22,20 +22,19 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 ## Circuito di condizionamento
 - Il circuito ha il compito di amplificare il segnale di uscita dal sensore e mandarlo al µC
 - È prevista la possibilità di effettuare una taratura
-- I relativi dati si trovano nell'[[Dati#Circuito di condizionamento|allegato]]
+- I relativi dati si trovano nell'[allegato](../main/Dati.md#circuito-di-condizionamento)
 
 
 ## Micro controllore e display
 - Il µC si occupa di acquisire i dati dal circuito di condizionamento, elaborarli e controllare opportunamente la ventola
 - Viene interfacciato inoltre con un display per permettere all'utilizzatore di conoscere la temperatura rilevata e lo stato della ventola
 - Per l'acquisizione dei dati viene usato l'**ADC** interno
-- Ulteriori dati sono nell'[[Dati#Micro controllore e display|allegato]]
-
+- Ulteriori dati sono nell'[allegato](../main/Dati.md#micro-controllore-e-display)
 
 ## Attuatore e ventola
 - Il compito dell'attuatore è interfacciare il µC con la ventola
 - È stato scelto per questo il BJT **TIP122**
-- Le specifiche del transistor e della ventola si possono trovare nell'[[Dati#Attuatore e ventola|allegato]]
+- Le specifiche del transistor e della ventola si possono trovare nell'[allegato](../main/Dati.md#attuatore-e-ventola)
 
 
 
@@ -53,7 +52,7 @@ Il µC deve:
 
 
 ## Diagramma di flusso
-![Diagramma di flusso](https://mermaid.ink/img/pako:eNpdkk9rg0AQxb_KsodiICn0aiFQmhQKgR70tuYw1dEM6K5s1kA0fvfuH7W2e9h9jj8f88YdeK4K5DGvNLQXlh4yyexKDGgTRf7YbELtU5IZhozbsyeoqe-hJyWR3UATfFNNGR_HwJ6UaodUdzg_Y1VRKsQJjek0MINNixqcPp8D8q7kTbgN9dXbrpmAUPkypLbK9ixRVU0wuZcgv6QQb3mOMnx7Q2lUvXg7oCyFSFqsJDXu5X8EbINKSzhYn0mygq5tDfcZOcoiiuzmBrIaE9vt9n44XrjkvzNwpUf6mPJ7wEX0wqZZYs2cT_L6t_zxmPpfhWVPU807Lb0vHbDArht59iv42RAuAt_yBnUDVNgLMDg44-aCDWY8trLAErraZDyTo4e7tgCDx4KM0jwuob7ilkNnVHKXOY-N_d8zdCCwN6qZqPEHeHrI9w)
+![Diagramma di flusso](https://mermaid.ink/img/pako:eNpdkk9rg0AQxb_KsodiICn0aiFQmhQKgR70tuYw1dEM6K5s1kA0fvfuH7W2e9h9jj8f88YdeK4K5DGvNLQXlh4yyexKDGgTRf7YbELtU5IZhozbsyeoqe-hJyWR3UATfFNNGR_HwJ6UaodUdzg_Y1VRKsQJjek0MINNixqcPp8D8q7kTbgN9dXbrpmAUPkypLbK9ixRVU0wuZcgv6QQb3mOMnx7Q2lUvXg7oCyFSFqsJDXu5X8EbINKSzhYn0mygq5tDfcZOcoiiuzmBrIaE9vt9n44XrjkvzNwpUf6mPJ7wEX0wqZZYs2cT_L6t_zxmPpfhWVPU807Lb0vHbDArht59iv42RAuAt_yBnUDVNgLMDg44-aCDWY8trLAErraZDyTo4e7tgCDx4KM0jwuob7ilkNnVHKXOY-N_d8zdCCwN6qZqPEHeHrI9w "Diagramma di flusso")
 
 ## Codice in C
 ```c
@@ -81,9 +80,7 @@ void main(){
       datoTemp = temperatureReading();
       
       te=(float)(datoTemp)*0.31372549; // 80:255=te:datoTemp  te=datotemp*80/255  
-      
-      viewThreshold(datoSoglia, te);
-      
+            
       if(te > (float)datoSoglia){
          FanOn();
          statoVentolaAttuale = STATO_VENTOLA_ON;

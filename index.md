@@ -4,7 +4,6 @@ permalink: /
 layout: default
 ---
 <!--- (Go to [about page](about.md) -->
-# CONTROLLO TEMPERATURA DI UN PICCOLO AMBIENTE
 # Spiegazione
 		   
 Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e accendere una ventola di raffreddamento quando viene raggiunta la temperatura d’intervento impostata. 
@@ -35,9 +34,6 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 - Il compito dell'attuatore è interfacciare il µC con la ventola
 - È stato scelto per questo il BJT **TIP122**
 - Le specifiche del transistor e della ventola si possono trovare nell'[allegato](Dati.md#attuatore-e-ventola)
-
-
-
 
 # Schema elettrico
 ![schema elettrico](./schema-elettrico.png)

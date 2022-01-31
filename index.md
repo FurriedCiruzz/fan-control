@@ -22,19 +22,19 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 ## Circuito di condizionamento
 - Il circuito ha il compito di amplificare il segnale di uscita dal sensore e mandarlo al µC
 - È prevista la possibilità di effettuare una taratura
-- I relativi dati si trovano nell'[allegato](Dati.md)
+- I relativi dati si trovano nell'[allegato](Dati.md#circuito-di-condizionamento)
 
 
 ## Micro controllore e display
 - Il µC si occupa di acquisire i dati dal circuito di condizionamento, elaborarli e controllare opportunamente la ventola
 - Viene interfacciato inoltre con un display per permettere all'utilizzatore di conoscere la temperatura rilevata e lo stato della ventola
 - Per l'acquisizione dei dati viene usato l'**ADC** interno
-- Ulteriori dati sono nell'[allegato](Dati.md)
+- Ulteriori dati sono nell'[allegato](Dati.md#micro-controllore-e-display)
 
 ## Attuatore e ventola
 - Il compito dell'attuatore è interfacciare il µC con la ventola
 - È stato scelto per questo il BJT **TIP122**
-- Le specifiche del transistor e della ventola si possono trovare nell'[allegato](Dati.md)
+- Le specifiche del transistor e della ventola si possono trovare nell'[allegato](Dati.md#attuatore-e-ventola)
 
 
 

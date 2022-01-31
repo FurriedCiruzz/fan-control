@@ -16,7 +16,7 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 ## Sensore
 - Come sensore di temperatura è stato scelto **LM35**
 - Dato il campo di applicazione, il blocco è stato progettato per funzionare bene tra 2°C e 80°C
-- I dati necessari si possono trovare nell'![allegato](../master/DATI)
+- I dati necessari si possono trovare nell'![allegato](../DATI)
 
 
 ## Circuito di condizionamento

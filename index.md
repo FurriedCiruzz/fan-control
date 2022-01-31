@@ -89,7 +89,7 @@ void main(){
          statoVentolaAttuale = STATO_VENTOLA_OFF;
       }
       
-      aggiornaDisplay(statoVentolaAttuale, statoVentolaPrecedente);
+      aggiornaDisplay(te, datoSoglia, statoVentolaAttuale, statoVentolaPrecedente);
       
       delay_ms(1000);   // delay di 1 secondo 
       blinking();

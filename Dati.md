@@ -1,6 +1,5 @@
 ---
 title: "Dati"
-permalink: /
 layout: default
 filename: Dati.md
 ---

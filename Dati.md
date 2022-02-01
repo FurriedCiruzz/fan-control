@@ -37,4 +37,4 @@ filename: Dati.md
 - Tranasistor **TIP122**
 	- hFE min **1000**
 	- Ib **10µA**
-	- Rb **500KΩ**
+	- Rb **5,7KΩ**

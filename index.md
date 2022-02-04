@@ -64,28 +64,31 @@ void main(){
   
   //aggiungi le tue variabili
    int8 datoTemp;         // variabile dove viene salvato il valore convertito dall'ADC
-   int8 datoSoglia=SOGLIA;// variabile dove viene salvato la soglia 80=>25°C
+   int8 datoSoglia=SOGLIA;// variabile dove viene salvato la soglia 80=>25°C vedi global.C
    float te=0;            // valore della temperatura ambiente
-   int1 statoVentolaAttuale = STATO_VENTOLA_OFF; // variabile dove viene salvato lo stato attuale della ventola 
-   int1 statoVentolaPrecedente = STATO_VENTOLA_OFF; // variabile dove viene salvato lo stato precedente della ventola
+   float s;
+
+ /*/////////////////////////////////////////////////////////////////////////////////
+ //esempio di come si converte il dato letto dall ADC in temperatura              //
+ //datoTemp=temperatureReading();                                                 //
+ //te=(float)(datoTemp)*0.31372549;//te=datoTemp*80/255:conversione in temperatura//
+ /////////////////////////////////////////////////////////////////////////////////*/
  
-   displayInitialization();
-   FanOff();
-   blinking();
+ 
+  // qui mettete il vostro programma......................
+  displayInitialization();
+  FanOff();
+  blinking();
    while(TRUE) {
       datoTemp = temperatureReading();
       
-      te=(float)(datoTemp)*0.31372549; // 80:255=te:datoTemp  te=datotemp*80/255  
-            
-      if(te > (float)datoSoglia){
-         FanOn();
-         statoVentolaAttuale = STATO_VENTOLA_ON;
-      }else{
-         FanOff();
-         statoVentolaAttuale = STATO_VENTOLA_OFF;
-      }
+      te=(float)(datoTemp)*0.31372549;          // 80:255=te:datoTemp  te=datotemp*80/255
+      s=(float)(datoSoglia)*0.31372549;         // datoSoglia:255=soglia:80   soglia=datoSoglia*80/255
       
-      aggiornaDisplay(te, datoSoglia, statoVentolaAttuale, statoVentolaPrecedente);
+      if(te > s)  FanOn();
+      else        FanOff();
+      
+      viewThreshold(datoSoglia,te);
       
       delay_ms(1000);   // delay di 1 secondo 
       blinking();

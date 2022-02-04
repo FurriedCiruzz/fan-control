@@ -38,3 +38,4 @@ filename: Dati.md
 	- hFE min **1000**
 	- Ib **600µA**
 	- Rb **5,7KΩ**
+	- Vcesat ≈ **1V**

@@ -36,5 +36,5 @@ filename: Dati.md
 	- Corrente **600mA**
 - Tranasistor **TIP122**
 	- hFE min **1000**
-	- Ib **10µA**
+	- Ib **600µA**
 	- Rb **5,7KΩ**

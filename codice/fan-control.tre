@@ -1,0 +1,132 @@
+ÀÄfan-control
+   ÀÄMAIN  0/420  Ram=14
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄdisplayInitialization  0/122  Ram=17
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄOLED_commands  0/80  Ram=5
+      ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÃÄ@READ_PROGRAM_MEMORY  0/30  Ram=7
+      ³  ³  ÀÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ÃÄOLED_CLS  0/78  Ram=2
+      ³  ³  ÃÄOLED_address  0/68  Ram=3
+      ³  ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ÀÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ÀÄOLED_gotoxy  0/78  Ram=6
+      ³  ³     ÀÄOLED_address  0/68  Ram=3
+      ³  ³        ÀÄ*
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const868  0/32  Ram=0
+      ³  ÃÄstrlen  0/52  Ram=5
+      ³  ÃÄOLED_text  0/160  Ram=8
+      ³  ³  ÃÄFONT_line  0/796  Ram=35
+      ³  ³  ³  ÃÄ@READ_PROGRAM_MEMORY  0/30  Ram=7
+      ³  ³  ³  ÃÄinvert  0/26  Ram=6
+      ³  ³  ³  ÃÄOLED_data  0/56  Ram=5
+      ³  ³  ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ³  ÃÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ³  ÀÄ@I2C_WRITEU_1  0/28  Ram=1
+      ³  ³  ³  ÃÄOLED_address  0/68  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@READ_PROGRAM_MEMORY  0/30  Ram=7
+      ³  ³  ³  ÃÄinvert  0/26  Ram=6
+      ³  ³  ³  ÀÄOLED_data  0/56  Ram=5
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÀÄOLED_address  0/68  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÀÄ@PSTRINGC_860  0/34  Ram=2
+      ³     ÀÄOLED_putc  0/82  Ram=2
+      ³        ÃÄOLED_CLS  0/78  Ram=2
+      ³        ³  ÀÄ*
+      ³        ÃÄOLED_gotoxy  0/78  Ram=6
+      ³        ³  ÀÄ*
+      ³        ÃÄOLED_gotoxy  0/78  Ram=6
+      ³        ³  ÀÄ*
+      ³        ÃÄOLED_gotoxy  0/78  Ram=6
+      ³        ³  ÀÄ*
+      ³        ÀÄOLED_text  0/160  Ram=8
+      ³           ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄtemperatureReading  0/38  Ram=1
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@FLT  0/120  Ram=10
+      ÃÄviewThreshold  0/426  Ram=17
+      ³  ÃÄ@ITOF  0/54  Ram=2
+      ³  ÃÄ@MULFF  0/242  Ram=11
+      ³  ÃÄ@ITOF  0/54  Ram=2
+      ³  ÃÄ@MULFF  0/242  Ram=11
+      ³  ÃÄ@SFTOI  0/56  Ram=4
+      ³  ÃÄview  0/180  Ram=9
+      ³  ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@PRINTF_L32D_860FPFPF  0/376  Ram=13
+      ³  ³  ³  ÃÄ@MULFF  0/242  Ram=11
+      ³  ³  ³  ÃÄ@FTOSD  0/64  Ram=5
+      ³  ³  ³  ÃÄ@DIV3232  0/142  Ram=13
+      ³  ³  ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÀÄ@DIV3232  0/142  Ram=13
+      ³  ³  ÃÄ@PSTRINGCN_860  0/32  Ram=3
+      ³  ³  ³  ÀÄOLED_putc  0/82  Ram=2
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÃÄ@MULFF  0/242  Ram=11
+      ³  ³  ÃÄ@DIVFF  0/348  Ram=14
+      ³  ³  ÃÄ@SFTOI  0/56  Ram=4
+      ³  ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄOLED_textbar  0/104  Ram=13
+      ³  ³  ³  ÀÄOLED_text  0/160  Ram=8
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const908  0/18  Ram=0
+      ³  ÃÄstrlen  0/52  Ram=5
+      ³  ÃÄOLED_text  0/160  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const908  0/18  Ram=0
+      ³  ÃÄstrlen  0/52  Ram=5
+      ³  ÃÄOLED_text  0/160  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_L32D_860FPFPF  0/376  Ram=13
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_putc  0/82  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄOLED_gotoxy  0/78  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÀÄOLED_putc  0/82  Ram=2
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÀÄ@delay_ms1  0/38  Ram=1

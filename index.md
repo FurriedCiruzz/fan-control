@@ -36,7 +36,7 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 - Le specifiche del transistor e della ventola si possono trovare nell'[allegato](Dati.md#attuatore-e-ventola)
 
 # Schema elettrico
-![schema elettrico](./schema-elettrico.png)
+![schema elettrico](./schema-elettrico.png "Schema elettrico")
 # Codice
 ## Spiegazione
 Il µC deve:

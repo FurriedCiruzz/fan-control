@@ -11,7 +11,7 @@ Il circuito serve per rilevare la temperatura in tempo reale dell’ambiente e a
 
 # Schema a blocchi
 
-![](https://mermaid.ink/img/pako:eNp1UcFuwjAM_ZUopyLBD1QCCVo4bReYdkl2cBN3jZQmVepqAsS_LyVsdBtzLvHLe_azc-bKa-Q5r63_UA0EYk976ViMfqjeA3QNAyYO6Hof8C29jKFNQEXGu2_-GOssu1Fnszu6EYUJajDko0xKp7zT5hS10KIjP6m6ZovFim0SgE7_clIxUXhHwVvrH3p52dzRQjwbFXzqlzQ_JihFafrOwnGCFWy5XLHyv_6KiT3UdUCt_1h_vJCtWBMNQLF1mr3zhO4EE-Euy17HWhamO9teN7GbOImHqiuqEgrXpGIspXzOWwwtGB2_8zxiklODLUqex6vGGgZLkkt3idSh00C41fFTAs9rsD3OOQzkD0eneE5hwC9SaSCO395Yl08E7qr0)
+![][schemaABlocchi]
 ## Sensore
 - Come sensore di temperatura è stato scelto **LM35**
 - Dato il campo di applicazione, il blocco è stato progettato per funzionare bene tra 2°C e 80°C
@@ -107,3 +107,5 @@ Durante il collaudo del filtro RC si è verificato un problema, ovvero che i seg
 Per questo è stato controllato il condensatore  ed è stato scoperto che la capacità reale era molto inferiore a quella riportata.  
 È stato quindi sostituito il filtro con quello che ora è montato.
 
+
+[SchemaABlocchi]: https://mermaid.ink/img/pako:eNp1UcFuwjAM_ZUopyLBD1QCCVo4bReYdkl2cBN3jZQmVepqAsS_LyVsdBtzLvHLe_azc-bKa-Q5r63_UA0EYk976ViMfqjeA3QNAyYO6Hof8C29jKFNQEXGu2_-GOssu1Fnszu6EYUJajDko0xKp7zT5hS10KIjP6m6ZovFim0SgE7_clIxUXhHwVvrH3p52dzRQjwbFXzqlzQ_JihFafrOwnGCFWy5XLHyv_6KiT3UdUCt_1h_vJCtWBMNQLF1mr3zhO4EE-Euy17HWhamO9teN7GbOImHqiuqEgrXpGIspXzOWwwtGB2_8zxiklODLUqex6vGGgZLkkt3idSh00C41fFTAs9rsD3OOQzkD0eneE5hwC9SaSCO395Yl08E7qr0 "Schema a blocchi"
